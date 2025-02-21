@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سحب الأرباح</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      font-family: 'Arial', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .header {
+      font-size: 22px;
+      font-weight: bold;
+      color: #6500ff;
+      margin-bottom: 15px;
+    }
+    .note {
+      background-color: #662bffca;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      font-size: 14px;
+      text-align: right;
+      margin-bottom: 5px;
+    }
+    select, input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      background-color: #f9f9f9;
+      transition: 0.3s ease;
+    }
+    input:focus, select:focus {
+      border-color: #6500ff;
+      outline: none;
+      box-shadow: 0 0 8px rgba(101, 0, 255, 0.3);
+    }
+    button {
+      width: 100%;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .link {
+      margin-top: 10px;
+    }
+    .link a {
+      color: #2575fc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .footer-note {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #000;
+      background: #95e0ffb4;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">⭐ طلبات سحب بوت متجر الذئب ⭐</div>
+
+    <div class="note">يرجى التأكد من إدخال جميع البيانات بشكل صحيح قبل الإرسال.</div>
+
+    <form id="dataForm">
+      <label for="name">الاسم:</label>
+      <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+
+      <label for="points">عدد النقاط:</label>
+      <input type="number" id="points" name="points" placeholder="أدخل عدد نقاطك" required>
+
+      <label for="username">اليوزر:</label>
+      <input type="text" id="username" name="username" placeholder="@ أدخل يوزرك" required>
+
+      <label for="userId">الايدي:</label>
+      <input type="text" id="userId" name="userId" placeholder="أدخل الايدي الخاص بك" required>
+
+      <label for="type">نوع الطلب:</label>
+      <select id="type" name="type" required>
+        <option value="">اختر النوع</option>
+        <option value="mastercard">ماستر كارد</option>
+        <option value="zaincash">زين كاش</option>
+      </select>
+
+      <div id="extraFields" class="hidden">
+        <label for="cardNumber">رقم البطاقة:</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="أدخل رقم البطاقة">
+
+        <label for="quantity">الكمية المراد سحبها:</label>
+        <select id="quantity" name="quantity">
+          <option value="">اختر الكمية</option>
+          <option value="5000">5000</option>
+          <option value="10000">10000</option>
+          <option value="20000">20000</option>
+          <option value="30000">30000</option>
+          <option value="40000">40000</option>
+          <option value="50000">50000</option>
+          <option value="60000">60000</option>
+          <option value="70000">70000</option>
+          <option value="80000">80000</option>
+          <option value="90000">90000</option>
+          <option value="100000">100000</option>
+          <option value="110000">110000</option>
+          <option value="120000">120000</option>
+          <option value="130000">130000</option>
+          <option value="140000">140000</option>
+          <option value="150000">150000</option>
+          <option value="160000">160000</option>
+          <option value="170000">170000</option>
+          <option value="180000">180000</option>
+          <option value="190000">190000</option>
+          <option value="200000">200000</option>
+          <option value="210000">210000</option>
+          <option value="220000">220000</option>
+          <option value="230000">230000</option>
+          <option value="240000">240000</option>
+          <option value="250000">250000</option>
+          <option value="260000">260000</option>
+          <option value="270000">270000</option>
+          <option value="280000">280000</option>
+          <option value="290000">290000</option>
+          <option value="300000">300000</option>
+        </select>
+      </div>
+
+      <button type="submit">إرسال البيانات</button>
+    </form>
+
+    <div class="link">
+      <a href="https://t.me/LQ_ME1" target="_self">🔗 انتقل إلى قناة البوت</a>
+    </div>
+
+    <div class="footer-note">⏳ سيتم مراجعة طلبك خلال ساعة الى 24 ساعة</div>
+  </div>
+
+  <script>
+    const typeField = document.getElementById('type');
+    const extraFields = document.getElementById('extraFields');
+    let token = "";
+    let chat_id = "";
+
+    fetch('send.json')
+      .then(response => response.json())
+      .then(config => {
+        token = config.token;
+        chat_id = config.chat_id;
+      })
+      .catch(error => console.error('⚠️ فشل تحميل s.json:', error));
+
+    typeField.addEventListener('change', () => {
+      if (typeField.value === 'mastercard' || typeField.value === 'zaincash') {
+        extraFields.classList.remove('hidden');
+      } else {
+        extraFields.classList.add('hidden');
+      }
+    });
+
+    document.getElementById('dataForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData.entries());
+      data.date = new Date().toLocaleString();
+
+      if (!token || !chat_id) {
+        alert('⚠️ حدث خطأ، لم يتم تحميل إعدادات التوكن والأيدي.');
+        return;
+      }
+
+      fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: chat_id,
+          text: `
+📌 طلب سحب جديد:
+👤 الاسم: ${data.name}
+📌 اليوزر: ${data.username}
+🆔 الايدي: ${data.userId}
+💳 النوع: ${data.type}
+${data.cardNumber ? '🔢 رقم البطاقة: ' + data.cardNumber : ''}
+💰 الكمية: ${data.quantity}
+⭐ النقاط: ${data.points}
+📅 التاريخ: ${data.date}
+
+🌐 رابط الموقع : www.altheap.free.nf
+          `
+        })
+      }).then(() => {
+        alert('تم ارسال طلبك الى الادارة انتظر من ساعة الى 24 ساعة ⌚');
+        e.target.reset();
+        extraFields.classList.add('hidden');
+      }).catch((err) => {
+        alert('⚠️ حدث خطأ أثناء الإرسال.');
+        console.error(err);
+      });
+    });
+  </script>
+
+</body>
+</html>
